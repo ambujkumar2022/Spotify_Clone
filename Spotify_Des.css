@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,200&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*---------------------navbar---------------------------*/
+nav{
+    font-family: 'Poppins', sans-serif;
+}
+nav ul{
+    display:flex;
+    align-items:center;
+    list-style-type:none;
+    height:60px;
+    /*justify-content: space-between;*/
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    padding:0 12px;
+}
+.brand img{
+    width:50px;
+    padding:0 12px;
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/*------------------------------------container-------------------------------*/
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color:#fff;
+    display: flex;
+    margin:23px auto;
+    width:70%;
+    border-radius: 12px;
+    padding:45px;
+    background: url(bg.jpg);
+}
+.songItemContainer{
+    margin-top:35px;
+}
+.songItem{
+    height:45px;
+    display:flex;
+    background-color: antiquewhite;
+    width:100%;
+    margin:12px 0px;
+    justify-content: space-around;
+    align-items: center;
+    color:black;
+    border-radius: 20px;
+}
+.songItem img{
+        width:38px;
+        margin:0 12px;
+        border-radius: 10px;
+}
+.timestamp{
+    margin:0 12px;
+}
+i{
+    /* margin:0 15px; */
+    cursor: pointer;
+}
+/*--------------------bottom--------------------*/
+.bottom{
+    position:sticky;
+    height:130px;
+    background-color: black;
+    bottom:0;
+    display:flex;
+    color:#fff;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icons{
+    margin: 16px 0px ;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+   width:80vw;
+   text-align: center;
+   cursor: pointer;
+}
+/*----------------------songInfo--------------------*/
+.songInfo{
+     position:absolute;
+     left:15px;
+}
+.songInfo img{
+    opacity:0;
+    transition:opacity 0.3s ease-in;
+}
+/*---------------------------mediaQuery----------------------------*/
+/* @media only screen(max-width:700px){
+
+} */
